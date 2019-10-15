@@ -1,27 +1,48 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-
 import { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
+import Tech from './pages/Tech';
+import Resources from './pages/Resources';
+import About from './pages/About';
 
 class App extends Component {
 	render() {
 		return (
 			<Router>
-				<Switch>
-					<div className="App">
-						<Route path="/" component={Home} />
-						<Route exact path="/contact" component={Contact} />
-						<Route exact path="/projects" component={Projects} />
-						<Link to="/">Home</Link>
-						<Link to="/contact">Contact Me</Link>
-						<Link to="/projects">Projects</Link>
+				<div className="App">
+					<Route exact path="/" component={Home} />
+					<Route exact path="/contact" component={Contact} />
+					<Route exact path="/projects" component={Projects} />
+					<Route exact path="/tech" component={Tech} />
+					<Route exact path="/resources" component={Resources} />
+					<Route exact path="/about" component={About} />
+					<div className="nav-bar">
+						<ul className="nav-list">
+							<li>
+								<Link to="/">Home</Link>
+							</li>
+							<li>
+								<Link to="/about">About</Link>
+							</li>
+							<li>
+								<Link to="/contact">Contact</Link>
+							</li>
+							<li>
+								<Link to="/projects">Projects</Link>
+							</li>
+							<li>
+								<Link to="/tech">Tech</Link>
+							</li>
+							<li>
+								<Link to="/resources">Resources</Link>
+							</li>
+						</ul>
 					</div>
-				</Switch>
+				</div>
 			</Router>
 		);
 	}
