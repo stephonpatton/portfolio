@@ -8,6 +8,7 @@ import Projects from './pages/Projects';
 import Tech from './pages/Tech';
 import Resources from './pages/Resources';
 import About from './pages/About';
+import Header from './components/Header';
 
 class App extends Component {
 	render() {
@@ -20,6 +21,7 @@ class App extends Component {
 					<Route exact path="/tech" component={Tech} />
 					<Route exact path="/resources" component={Resources} />
 					<Route exact path="/about" component={About} />
+					<Header />
 					<div className="nav-bar">
 						<ul className="nav-list">
 							<li>
