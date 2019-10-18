@@ -22,28 +22,26 @@ class App extends Component {
 					<Route exact path="/resources" component={Resources} />
 					<Route exact path="/about" component={About} />
 					<Header />
-					<div className="nav-bar">
-						<ul className="nav-list">
-							<li>
-								<Link to="/">Home</Link>
-							</li>
-							<li>
-								<Link to="/about">About</Link>
-							</li>
-							<li>
-								<Link to="/contact">Contact</Link>
-							</li>
-							<li>
-								<Link to="/projects">Projects</Link>
-							</li>
-							<li>
-								<Link to="/tech">Tech</Link>
-							</li>
-							<li>
-								<Link to="/resources">Resources</Link>
-							</li>
-						</ul>
-					</div>
+					<ul className="nav-list">
+						<li>
+							<Link to="/">Home</Link>
+						</li>
+						<li>
+							<Link to="/about">About</Link>
+						</li>
+						<li>
+							<Link to="/contact">Contact</Link>
+						</li>
+						<li>
+							<Link to="/projects">Projects</Link>
+						</li>
+						<li>
+							<Link to="/tech">Tech</Link>
+						</li>
+						<li>
+							<Link to="/resources">Resources</Link>
+						</li>
+					</ul>
 				</div>
 			</Router>
 		);

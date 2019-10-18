@@ -5,42 +5,46 @@
 .App {
 	text-align: center;
 }
-.nav-bar {
+
+.nav-list {
 	width: 100%;
-}
-.nav-bar ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	width: 200px;
-	background-color: #f1f1f1;
 	display: flex;
-	flex-direction: row;
+	justify-content: flex-end;
+	margin: 0 0 3em 0;
+	padding: 0;
+	list-style: none;
+	/* border-bottom: 1px solid #ccc; */
+	/* border-top: 1px solid #ccc; */
 }
-.nav-bar li {
-	/* float: left; */
-	color: green;
-	background: purple;
-	display: inline;
-	border: 10px solid #555;
-	text-decoration: none;
+
+.nav-list li {
+	float: right;
+	list-style: none;
 }
-li a {
+
+.nav-list li a {
 	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
+	padding: 8px 15px;
 	text-decoration: none;
+	font-weight: bold;
+	color: #069;
+	font-size: 20px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	/* border-right: 1px solid #ccc; */
 }
 a:visited {
 	color: red;
+}
+ul li:hover {
+	outline: 2px deeppink solid;
+	cursor: pointer;
 }
 
 .App-logo {
 	height: 40vmin;
 }
 
-.App-header {
+/* .App-header {
 	background-color: #282c34;
 	min-height: 100vh;
 	display: flex;
@@ -49,7 +53,7 @@ a:visited {
 	justify-content: center;
 	font-size: calc(10px + 2vmin);
 	color: white;
-}
+} */
 
 .App-link {
 	color: #09d3ac;
