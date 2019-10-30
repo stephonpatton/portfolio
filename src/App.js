@@ -10,6 +10,7 @@ import Resources from './pages/Resources';
 import About from './pages/About';
 import Header from './components/Header';
 import Nav from './components/Nav';
+import Sidebar from './components/Sidebar';
 
 class App extends Component {
 	render() {
@@ -17,6 +18,8 @@ class App extends Component {
 			<Router>
 				<div className="App">
 					<Nav />
+					<Sidebar />
+
 					<Route exact path="/" component={Home} />
 					<Route exact path="/contact" component={Contact} />
 					<Route exact path="/projects" component={Projects} />
