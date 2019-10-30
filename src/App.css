@@ -4,24 +4,51 @@
 }
 .App {
 	text-align: center;
+	background-color: aliceblue;
 }
 
 .nav-list {
+	display: flex;
+	justify-content: flex-end;
+	margin: 0 0 3em 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav-list li {
+	padding: 10px;
+}
+
+.footer-cont {
+	padding-bottom: 2.5rem;
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	justify-content: center;
+	width: 100%;
+	height: 2.5rem;
+	text-align: center;
+}
+.nav-list li a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #069;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* .nav-list {
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
 	margin: 0 0 3em 0;
 	padding: 0;
 	list-style: none;
-	/* border-bottom: 1px solid #ccc; */
-	/* border-top: 1px solid #ccc; */
-}
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+} */
 
-.nav-list li {
-	float: right;
-	list-style: none;
-}
-
+/* 
 .nav-list li a {
 	display: block;
 	padding: 8px 15px;
@@ -30,13 +57,11 @@
 	color: #069;
 	font-size: 20px;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	/* border-right: 1px solid #ccc; */
-}
-a:visited {
-	color: red;
-}
-ul li:hover {
-	outline: 2px deeppink solid;
+	border-right: 1px solid #ccc;
+} */
+
+.nav-list ul li:hover {
+	outline: 2px rgb(255, 0, 0);
 	cursor: pointer;
 }
 

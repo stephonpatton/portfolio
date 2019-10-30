@@ -9,39 +9,25 @@ import Tech from './pages/Tech';
 import Resources from './pages/Resources';
 import About from './pages/About';
 import Header from './components/Header';
+import Nav from './components/Nav';
 
 class App extends Component {
 	render() {
 		return (
 			<Router>
 				<div className="App">
+					<Nav />
 					<Route exact path="/" component={Home} />
 					<Route exact path="/contact" component={Contact} />
 					<Route exact path="/projects" component={Projects} />
 					<Route exact path="/tech" component={Tech} />
 					<Route exact path="/resources" component={Resources} />
 					<Route exact path="/about" component={About} />
+
 					<Header />
-					<ul className="nav-list">
-						<li>
-							<Link to="/">Home</Link>
-						</li>
-						<li>
-							<Link to="/about">About</Link>
-						</li>
-						<li>
-							<Link to="/contact">Contact</Link>
-						</li>
-						<li>
-							<Link to="/projects">Projects</Link>
-						</li>
-						<li>
-							<Link to="/tech">Tech</Link>
-						</li>
-						<li>
-							<Link to="/resources">Resources</Link>
-						</li>
-					</ul>
+				</div>
+				<div className="footer-cont">
+					<footer className="footer">2019 &#169; Stephon Patton</footer>
 				</div>
 			</Router>
 		);
@@ -49,3 +35,5 @@ class App extends Component {
 }
 
 export default App;
+
+//TODO: Add copyright sign to footer ---DONE
