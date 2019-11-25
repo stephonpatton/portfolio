@@ -2,10 +2,21 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Merriweather';
+	color: #ff6500;
 }
 .App {
 	text-align: center;
 	background-color: aliceblue;
+}
+
+.home-comp {
+	/* height: 96vh; /*TODO: Change so footer can be responsive */
+	background-image: url("../src/imgs/code-1839406_960_720.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 }
 
 .nav-list {
@@ -71,11 +82,11 @@
 	height: 40vmin;
 }
 
-.sidebar-cont {
+/* .sidebar-cont {
 	position: absolute;
 	right: 0;
 	bottom: 50%;
-}
+} */
 
 /* .App-header {
 	background-color: #282c34;
