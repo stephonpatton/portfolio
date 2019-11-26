@@ -12,24 +12,22 @@ import About from './pages/About';
 import Header from './components/Header';
 import Nav from './components/Nav';
 import Sidebar from './components/Sidebar';
-
+import Footer from './components/Footer';
 class App extends Component {
 	render() {
 		return (
 			<Router>
 				<div className="App">
+					<Header />
 					<Nav />
 					<Sidebar />
-					<Header />
 					<Route exact path="/" component={Home} />
 					<Route exact path="/contact" component={Contact} />
 					<Route exact path="/projects" component={Projects} />
 					<Route exact path="/tech" component={Tech} />
 					<Route exact path="/resources" component={Resources} />
 					<Route exact path="/about" component={About} />
-				</div>
-				<div className="footer-cont">
-					<footer className="footer">2019 &#169; Stephon Patton</footer>
+					<Footer />
 				</div>
 			</Router>
 		);

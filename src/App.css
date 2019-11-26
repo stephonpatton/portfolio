@@ -2,15 +2,18 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Merriweather';
-	color: #ff6500;
+	/* color: #ff6500; */
+	color: white;
 }
 .App {
 	text-align: center;
 	background-color: aliceblue;
+	height: 100vh;
 }
 
 .home-comp {
 	/* height: 96vh; /*TODO: Change so footer can be responsive */
+	height: 100vh;
 	background-image: url("../src/imgs/code-1839406_960_720.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -25,6 +28,9 @@
 	margin: 0 0 3em 0;
 	padding: 0;
 	list-style: none;
+}
+.nav-bar {
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .nav-list li {
@@ -45,9 +51,16 @@
 .nav-list li a {
 	text-decoration: none;
 	font-weight: bold;
-	color: #069;
+	/* color: #069; */
+	/* color: white; */
 	font-family: 'Merriweather';
 	/* , 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+.nav-cont {
+	padding: 0;
+	height: 0;
+	position: fixed;
+	right: 0;
 }
 
 /* .nav-list {
@@ -82,11 +95,17 @@
 	height: 40vmin;
 }
 
-/* .sidebar-cont {
+.sidebar-cont {
 	position: absolute;
 	right: 0;
 	bottom: 50%;
-} */
+}
+
+.header-cont {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+}
 
 /* .App-header {
 	background-color: #282c34;

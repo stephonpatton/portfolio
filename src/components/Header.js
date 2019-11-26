@@ -4,8 +4,7 @@ import Image from 'react';
 const Header = () => {
 	return (
 		<div class="header-cont">
-			<div class="header-logo" />
-			<h1>Polar Tech</h1>
+			<h1>Stephon Patton</h1>
 		</div>
 	);
 };
