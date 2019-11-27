@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import Header from './Header';
 const Nav = () => {
 	return (
 		<div class="nav-cont">
 			<div class="nav-bar">
+				<div class="name">
+					{/* <h1>Stephon Patton</h1> */}
+					<Header />
+				</div>
 				<ul className="nav-list">
 					<li>
 						<Link activeClass="active" to="/" spy={true} smooth={true} offset={-70} duration={500}>
